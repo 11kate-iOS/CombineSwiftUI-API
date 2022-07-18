@@ -18,6 +18,11 @@ struct DailyWeatherRow: View {
     HStack {
       VStack {
         Text("\(viewModel.day)")
+              .padding()
+              .background(.cyan)
+              .clipShape(Capsule())
+              .foregroundColor(.white)
+              .font(.headline)
         Text("\(viewModel.month)")
       }
       
