@@ -50,6 +50,12 @@ private extension WeeklyWeatherView {
       NavigationLink(destination: viewModel.currentWeatherView) {
         VStack(alignment: .leading) {
           Text(viewModel.city)
+                .padding()
+                .background(.cyan)
+                .clipShape(Capsule())
+                .foregroundColor(.white)
+                .font(.title)
+
           Text("Weather today")
             .font(.caption)
             .foregroundColor(.cyan)

@@ -14,8 +14,19 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weatherLaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="bJ9-Qp-HXp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.39174937874005905" green="0.82865980133604367" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bJ9-Qp-HXp" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="4j9-gj-lMh"/>
+                            <constraint firstAttribute="trailing" secondItem="bJ9-Qp-HXp" secondAttribute="trailing" id="bzS-4Z-gTP"/>
+                            <constraint firstAttribute="bottom" secondItem="bJ9-Qp-HXp" secondAttribute="bottom" id="wLM-mA-ERA"/>
+                            <constraint firstItem="bJ9-Qp-HXp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="woN-hG-d37"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -23,4 +34,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="weatherLaunchScreen" width="640" height="1136"/>
+    </resources>
 </document>
