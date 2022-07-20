@@ -29,7 +29,21 @@
 		767F6647287C097400D10C0E /* WeeklyWeather+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767F6646287C097300D10C0E /* WeeklyWeather+Builder.swift */; };
 		767F6649287C0CA800D10C0E /* DailyWeather+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767F6648287C0CA800D10C0E /* DailyWeather+Row.swift */; };
 		767F664B287C0CD600D10C0E /* DailyWeatherRow+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767F664A287C0CD600D10C0E /* DailyWeatherRow+ViewModel.swift */; };
+		76D230112885BDC300F20926 /* CombineSwiftUI_APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D230102885BDC300F20926 /* CombineSwiftUI_APITests.swift */; };
+		76D230192885BDFF00F20926 /* Test+WeeklyWeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D230182885BDFF00F20926 /* Test+WeeklyWeatherVM.swift */; };
+		76D2301F2888902D00F20926 /* Test+CurrentWeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2301B28888F3100F20926 /* Test+CurrentWeatherVM.swift */; };
+		76D230242888915C00F20926 /* Test+Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D230232888915C00F20926 /* Test+Fetcher.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76D230122885BDC300F20926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767F6609287BFD6600D10C0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767F6610287BFD6600D10C0E;
+			remoteInfo = "CombineSwiftUI+API";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		767F6611287BFD6600D10C0E /* CombineSwiftUI+API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CombineSwiftUI+API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,10 +70,22 @@
 		767F6646287C097300D10C0E /* WeeklyWeather+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeeklyWeather+Builder.swift"; sourceTree = "<group>"; };
 		767F6648287C0CA800D10C0E /* DailyWeather+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyWeather+Row.swift"; sourceTree = "<group>"; };
 		767F664A287C0CD600D10C0E /* DailyWeatherRow+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyWeatherRow+ViewModel.swift"; sourceTree = "<group>"; };
+		76D2300E2885BDC300F20926 /* CombineSwiftUI+APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CombineSwiftUI+APITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D230102885BDC300F20926 /* CombineSwiftUI_APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineSwiftUI_APITests.swift; sourceTree = "<group>"; };
+		76D230182885BDFF00F20926 /* Test+WeeklyWeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test+WeeklyWeatherVM.swift"; sourceTree = "<group>"; };
+		76D2301B28888F3100F20926 /* Test+CurrentWeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test+CurrentWeatherVM.swift"; sourceTree = "<group>"; };
+		76D230232888915C00F20926 /* Test+Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test+Fetcher.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		767F660E287BFD6600D10C0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D2300B2885BDC300F20926 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				767F6613287BFD6600D10C0E /* CombineSwiftUI+API */,
+				76D2300F2885BDC300F20926 /* CombineSwiftUI+APITests */,
 				767F6612287BFD6600D10C0E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				767F6611287BFD6600D10C0E /* CombineSwiftUI+API.app */,
+				76D2300E2885BDC300F20926 /* CombineSwiftUI+APITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +145,7 @@
 		767F6631287C07D400D10C0E /* WeatherAPI */ = {
 			isa = PBXGroup;
 			children = (
+				76D230202888909300F20926 /* TestWeatherAPI */,
 				767F6632287C07F000D10C0E /* Responses.swift */,
 				767F6634287C081A00D10C0E /* Fetcher.swift */,
 				767F6636287C083A00D10C0E /* Errors.swift */,
@@ -127,6 +156,7 @@
 		767F6638287C085D00D10C0E /* CurrentWeather */ = {
 			isa = PBXGroup;
 			children = (
+				76D2301A28888F0400F20926 /* Test+CurrentWeather */,
 				767F6639287C087E00D10C0E /* CurrentWeather+View.swift */,
 				767F663B287C08A200D10C0E /* CurrentWeather+ViewModel.swift */,
 				767F663D287C08CF00D10C0E /* CurrentWeather+Row.swift */,
@@ -138,6 +168,7 @@
 		767F6641287C091100D10C0E /* WeeklyWeather */ = {
 			isa = PBXGroup;
 			children = (
+				76D230172885BDD200F20926 /* TestWeeklyWeather */,
 				767F6642287C092700D10C0E /* WeeklyWeather+View.swift */,
 				767F6644287C094F00D10C0E /* WeeklyWeather+ViewModel.swift */,
 				767F6646287C097300D10C0E /* WeeklyWeather+Builder.swift */,
@@ -145,6 +176,38 @@
 				767F664A287C0CD600D10C0E /* DailyWeatherRow+ViewModel.swift */,
 			);
 			path = WeeklyWeather;
+			sourceTree = "<group>";
+		};
+		76D2300F2885BDC300F20926 /* CombineSwiftUI+APITests */ = {
+			isa = PBXGroup;
+			children = (
+				76D230102885BDC300F20926 /* CombineSwiftUI_APITests.swift */,
+			);
+			path = "CombineSwiftUI+APITests";
+			sourceTree = "<group>";
+		};
+		76D230172885BDD200F20926 /* TestWeeklyWeather */ = {
+			isa = PBXGroup;
+			children = (
+				76D230182885BDFF00F20926 /* Test+WeeklyWeatherVM.swift */,
+			);
+			path = TestWeeklyWeather;
+			sourceTree = "<group>";
+		};
+		76D2301A28888F0400F20926 /* Test+CurrentWeather */ = {
+			isa = PBXGroup;
+			children = (
+				76D2301B28888F3100F20926 /* Test+CurrentWeatherVM.swift */,
+			);
+			path = "Test+CurrentWeather";
+			sourceTree = "<group>";
+		};
+		76D230202888909300F20926 /* TestWeatherAPI */ = {
+			isa = PBXGroup;
+			children = (
+				76D230232888915C00F20926 /* Test+Fetcher.swift */,
+			);
+			path = TestWeatherAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +230,24 @@
 			productReference = 767F6611287BFD6600D10C0E /* CombineSwiftUI+API.app */;
 			productType = "com.apple.product-type.application";
 		};
+		76D2300D2885BDC300F20926 /* CombineSwiftUI+APITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76D230162885BDC300F20926 /* Build configuration list for PBXNativeTarget "CombineSwiftUI+APITests" */;
+			buildPhases = (
+				76D2300A2885BDC300F20926 /* Sources */,
+				76D2300B2885BDC300F20926 /* Frameworks */,
+				76D2300C2885BDC300F20926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76D230132885BDC300F20926 /* PBXTargetDependency */,
+			);
+			name = "CombineSwiftUI+APITests";
+			productName = "CombineSwiftUI+APITests";
+			productReference = 76D2300E2885BDC300F20926 /* CombineSwiftUI+APITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -179,6 +260,10 @@
 				TargetAttributes = {
 					767F6610287BFD6600D10C0E = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					76D2300D2885BDC300F20926 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 767F6610287BFD6600D10C0E;
 					};
 				};
 			};
@@ -196,6 +281,7 @@
 			projectRoot = "";
 			targets = (
 				767F6610287BFD6600D10C0E /* CombineSwiftUI+API */,
+				76D2300D2885BDC300F20926 /* CombineSwiftUI+APITests */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +294,13 @@
 				767F6621287BFD6800D10C0E /* LaunchScreen.storyboard in Resources */,
 				767F661E287BFD6800D10C0E /* Assets.xcassets in Resources */,
 				767F661C287BFD6600D10C0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D2300C2885BDC300F20926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +333,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76D2300A2885BDC300F20926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76D230192885BDFF00F20926 /* Test+WeeklyWeatherVM.swift in Sources */,
+				76D230242888915C00F20926 /* Test+Fetcher.swift in Sources */,
+				76D2301F2888902D00F20926 /* Test+CurrentWeatherVM.swift in Sources */,
+				76D230112885BDC300F20926 /* CombineSwiftUI_APITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76D230132885BDC300F20926 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 767F6610287BFD6600D10C0E /* CombineSwiftUI+API */;
+			targetProxy = 76D230122885BDC300F20926 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		767F661A287BFD6600D10C0E /* Main.storyboard */ = {
@@ -438,6 +550,42 @@
 			};
 			name = Release;
 		};
+		76D230142885BDC300F20926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23486ZAH68;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vasilieva.CombineSwiftUI-APITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CombineSwiftUI+API.app/CombineSwiftUI+API";
+			};
+			name = Debug;
+		};
+		76D230152885BDC300F20926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23486ZAH68;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vasilieva.CombineSwiftUI-APITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CombineSwiftUI+API.app/CombineSwiftUI+API";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -455,6 +603,15 @@
 			buildConfigurations = (
 				767F6626287BFD6800D10C0E /* Debug */,
 				767F6627287BFD6800D10C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76D230162885BDC300F20926 /* Build configuration list for PBXNativeTarget "CombineSwiftUI+APITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76D230142885BDC300F20926 /* Debug */,
+				76D230152885BDC300F20926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

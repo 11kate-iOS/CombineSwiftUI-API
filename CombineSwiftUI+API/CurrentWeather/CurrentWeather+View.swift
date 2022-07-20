@@ -36,7 +36,7 @@ private extension CurrentWeatherView {
   }
 
   var loading: some View {
-    Text("Loading \(viewModel.city)'s weather...")
+    Text("Please wait, loading \(viewModel.city)'s weather...")
       .foregroundColor(.cyan)
   }
 }
